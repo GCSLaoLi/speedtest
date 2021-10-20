@@ -1,0 +1,10 @@
+version: "3"
+services:
+  speedtest:
+    image: adolfintel/speedtest
+    restart: always
+    environment:
+      TITLE: 网速测试
+      MODE: standalone     
+    ports:
+      - 10000:80
